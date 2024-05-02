@@ -14,6 +14,7 @@ public class Lesson_14 extends BaseTest {
     private final static String SUMMA = "Сумма";
     private final static String EMAIL_FOR_CHECK = "E-mail для отправки чека";
     private final static String NUMBER = "Номер";
+    private final static String TEN = "10.00";
 
     @Test
     public void testCheckPlaceholdersForCommunicationService() {
@@ -81,7 +82,7 @@ public class Lesson_14 extends BaseTest {
 
     @Test
     public void testCheckAmountTitleDisplay() {
-        final String expectedAmountTitle = "10.00 BYN";
+        final String expectedAmountTitle = TEN + " BYN";
 
         TestUtils.enterDataClickContinue(this, getDriver());
         String actualAmountTitle = new HomePage(getDriver())
@@ -92,7 +93,7 @@ public class Lesson_14 extends BaseTest {
 
     @Test
     public void testCheckAmountOnTheButton() {
-        final String expectedAmountOnTheButton = "10.00";
+        final String expectedAmountOnTheButton = TEN;
 
         TestUtils.enterDataClickContinue(this, getDriver());
         String actualAmountOnTheButton = new HomePage(getDriver())
@@ -103,7 +104,7 @@ public class Lesson_14 extends BaseTest {
 
     @Test
     public void testCheckNumberTitleDisplay() {
-        final String expectedNumberPhone = "Номер:375297777777";
+        final String expectedNumberPhone = NUMBER + ":375297777777";
 
         TestUtils.enterDataClickContinue(this, getDriver());
         String actualNumberPhone = new HomePage(getDriver())
@@ -115,7 +116,7 @@ public class Lesson_14 extends BaseTest {
     @Test
     public void testCheckPlaceholdersInTheFrame() {
         final List<String> expectedPlaceholders = List.of(
-                "Номер карты",
+                NUMBER + " карты",
                 "Срок действия\nCVC",
                 "Имя держателя (как на карте)"
         );
