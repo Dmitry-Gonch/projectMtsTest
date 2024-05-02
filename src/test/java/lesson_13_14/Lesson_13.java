@@ -1,11 +1,11 @@
-package lesson_13;
+package lesson_13_14;
 
-import lesson_13.model.HomePage;
-import lesson_13.runner.BaseTest;
+import lesson_13_14.model.HomePage;
+import lesson_13_14.runner.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class MtsTest extends BaseTest {
+public class Lesson_13 extends BaseTest {
 
     @Test
     public void testCheckBlockName() {
