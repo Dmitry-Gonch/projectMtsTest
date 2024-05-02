@@ -1,4 +1,4 @@
-package lesson_13.model;
+package lesson_13_14.model;
 
 import org.openqa.selenium.WebDriver;
 
