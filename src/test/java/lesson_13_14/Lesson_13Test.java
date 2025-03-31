@@ -5,7 +5,7 @@ import lesson_13_14.runner.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class Lesson_13 extends BaseTest {
+public class Lesson_13Test extends BaseTest {
 
     @Test
     public void testCheckBlockName() {

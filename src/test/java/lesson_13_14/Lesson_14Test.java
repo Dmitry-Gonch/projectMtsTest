@@ -3,13 +3,12 @@ package lesson_13_14;
 import lesson_13_14.model.HomePage;
 import lesson_13_14.runner.BaseTest;
 import lesson_13_14.runner.TestUtils;
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class Lesson_14 extends BaseTest {
+public class Lesson_14Test extends BaseTest {
 
     private final static String SUMMA = "Сумма";
     private final static String EMAIL_FOR_CHECK = "E-mail для отправки чека";
